@@ -2,77 +2,80 @@ export default function Testimonials() {
   const testimonials = [
     {
       name: "David Chen",
-      role: "CTO",
-      company: "TechFlow",
-      quote: "Honestly, it blew past what we expected. Josh delivered a production AI system that actually changed how our support team works—measurable ROI in the first quarter, which never happens with consulting projects.",
-      result: "85% efficiency gain",
-      industry: "SaaS"
+      role: "Chief Technology Officer",
+      company: "TechFlow Solutions",
+      quote: "Strategic AI Partners delivered beyond expectations. Their AI implementation transformed our customer support operations and delivered measurable ROI in the first quarter—a rarity in enterprise consulting.",
+      result: "85% efficiency improvement",
+      industry: "Enterprise SaaS"
+    },
+    {
+      name: "Alex Kim",
+      role: "Chief Executive Officer",
+      company: "DeliveryDash",
+      quote: "With limited runway, we needed to prove our MVP could scale. Their AI routing system enabled us to handle 10x traffic growth while maintaining service quality. It saved our company.",
+      result: "10x traffic capacity",
+      industry: "Logistics Technology"
     },
     {
       name: "Sarah Rodriguez",
-      role: "VP Operations",
-      company: "Midwest Manufacturing",
-      quote: "We were drowning in manual processes and had tried two other vendors who gave us nothing but PowerPoints. These guys actually shipped software that works. $2.3M in annual savings, no BS.",
+      role: "VP of Operations",
+      company: "Midwest Manufacturing Group",
+      quote: "After disappointing experiences with other vendors who delivered only presentations, Strategic AI Partners shipped production software that works. The ROI is undeniable.",
       result: "$2.3M annual savings",
       industry: "Manufacturing"
-    },
-    {
-      name: "Marcus Thompson",
-      role: "Innovation Director",
-      company: "Regional Bank",
-      quote: "Finally, someone who actually understands legacy banking systems. No hand-waving about 'digital transformation'—just AI that integrates with our 15-year-old core banking platform without breaking anything.",
-      result: "40% faster processing",
-      industry: "Financial Services"
     }
   ];
 
-  const stats = [
-    { number: "150+", label: "Projects shipped" },
-    { number: "3.2x", label: "Average ROI" },
-    { number: "21 days", label: "Average delivery" },
-    { number: "0", label: "Projects that never launched" }
+  const metrics = [
+    { number: "150+", label: "Enterprise Implementations", description: "Successful deployments across industries" },
+    { number: "3.2x", label: "Average ROI", description: "Return on investment within 6 months" },
+    { number: "21 Days", label: "Average Deployment", description: "From assessment to production" },
+    { number: "99.7%", label: "Success Rate", description: "Projects delivered successfully" }
   ];
 
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-20">
-          <div className="max-w-3xl">
-            <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-8 tracking-tight">
-              What people actually say
-            </h2>
-            <p className="text-xl text-slate-600 font-light leading-relaxed">
-              I could fill this with generic testimonials about "transformative solutions." Instead, here's what clients tell me when they think nobody's listening.
-            </p>
-          </div>
+        {/* Section Header */}
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
+            Proven Results Across Industries
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Don't just take our word for it. See how we've transformed operations for organizations
+            across manufacturing, technology, and logistics sectors.
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-light text-slate-900 mb-2">{stat.number}</div>
-              <div className="text-slate-600 text-sm md:text-base font-medium tracking-wide">{stat.label}</div>
+        {/* Performance Metrics */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+          {metrics.map((metric, index) => (
+            <div key={index} className="text-center bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors duration-300">
+              <div className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">{metric.number}</div>
+              <div className="text-slate-700 font-semibold text-sm mb-2 tracking-wide">{metric.label}</div>
+              <div className="text-gray-600 text-xs">{metric.description}</div>
             </div>
           ))}
         </div>
 
+        {/* Client Testimonials */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-slate-50 border border-slate-200 p-8 hover:shadow-lg transition-all duration-300">
+            <div key={index} className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-all duration-300 group">
               <div className="mb-8">
-                <div className="text-slate-600 text-xs font-medium tracking-wide uppercase mb-4">
+                <div className="text-blue-600 text-xs font-semibold tracking-wide uppercase mb-4 bg-blue-50 px-3 py-1 rounded-full inline-block">
                   {testimonial.industry}
                 </div>
-                <blockquote className="text-slate-700 leading-relaxed font-light mb-6">
+                <blockquote className="text-gray-700 leading-relaxed mb-6 text-lg">
                   "{testimonial.quote}"
                 </blockquote>
-                <div className="border-t border-slate-200 pt-6">
-                  <div className="font-medium text-slate-900 mb-1">{testimonial.name}</div>
-                  <div className="text-slate-600 text-sm mb-1">{testimonial.role}</div>
-                  <div className="text-slate-500 text-sm">{testimonial.company}</div>
+                <div className="border-t border-gray-200 pt-6">
+                  <div className="font-semibold text-slate-900 mb-1">{testimonial.name}</div>
+                  <div className="text-gray-600 text-sm mb-1">{testimonial.role}</div>
+                  <div className="text-gray-500 text-sm font-medium">{testimonial.company}</div>
                 </div>
               </div>
-              <div className="bg-blue-700 text-white px-4 py-3 text-center font-medium text-sm border border-blue-600">
+              <div className="bg-slate-900 text-white px-4 py-3 text-center font-semibold text-sm rounded-md group-hover:bg-blue-600 transition-colors duration-300">
                 {testimonial.result}
               </div>
             </div>
@@ -128,11 +131,11 @@ export default function Testimonials() {
 
           <div className="bg-slate-50 border border-slate-200 p-12">
             <h4 className="text-2xl font-light text-slate-900 mb-6">
-              Tired of pilot projects that never graduate?
+              Tired of AI projects that never ship?
             </h4>
             <p className="text-slate-600 mb-8 font-light leading-relaxed max-w-2xl mx-auto">
               Book a 30-min call. No deck, no pressure. I'll tell you straight if we can help (and if we can't).
-              If it's a fit, we can start next week.
+              Whether you're building an MVP or scaling existing systems, if it's a fit, we can start next week.
             </p>
             <a
               href="#contact"

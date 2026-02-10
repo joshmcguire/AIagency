@@ -3,8 +3,16 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      colors: {
+        'navy': {
+          700: '#1e40af',
+          900: '#001F3F',
+        },
+        'accent-blue': '#00BFFF',
+      },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out forwards',
+        'fade-in-delayed': 'fadeIn 1s ease-out forwards',
         'slide-up': 'slideUp 0.6s ease-out forwards',
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },

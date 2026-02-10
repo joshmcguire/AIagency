@@ -40,7 +40,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-xl font-medium mb-3 text-white">Strategic Assessment</h3>
-                  <p className="text-slate-300 font-light leading-relaxed">Comprehensive analysis of your current operations and identification of high-impact AI implementation opportunities.</p>
+                  <p className="text-slate-300 font-light leading-relaxed">Analysis of your current systems and identification of high-impact AI implementation opportunities.</p>
                 </div>
               </div>
 
@@ -70,11 +70,11 @@ export default function Contact() {
               <div className="space-y-4">
                 <div className="flex items-start text-slate-300">
                   <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                  <span className="text-sm font-light">Production-ready AI solution with enterprise integration</span>
+                  <span className="text-sm font-light">Production-ready AI solution with system integration</span>
                 </div>
                 <div className="flex items-start text-slate-300">
                   <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                  <span className="text-sm font-light">Comprehensive technical documentation and training materials</span>
+                  <span className="text-sm font-light">Complete technical documentation and team training</span>
                 </div>
                 <div className="flex items-start text-slate-300">
                   <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
@@ -144,7 +144,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="challenge" className="block text-sm font-medium text-slate-700 mb-3">
-                  Strategic Objective *
+                  Project Objective *
                 </label>
                 <textarea
                   id="challenge"
@@ -154,7 +154,7 @@ export default function Contact() {
                   value={formData.challenge}
                   onChange={handleChange}
                   className="w-full px-4 py-4 border border-slate-300 rounded-sm focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-colors duration-200"
-                  placeholder="Describe your primary business challenge and desired AI implementation outcomes..."
+                  placeholder="Describe your business challenge and what you're looking to build with AI..."
                 />
               </div>
 
