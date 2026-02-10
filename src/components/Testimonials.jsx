@@ -84,114 +84,97 @@ export default function Testimonials() {
 
         <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-16">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-4xl font-bold text-slate-900 mb-4 text-center">
-              Why Teams Stick with Us
-            </h3>
-            <p className="text-gray-600 text-center mb-12 text-lg max-w-3xl mx-auto">
-              Here's what happens when you team up with engineers who've fixed these headaches before.
-            </p>
+            <h2 className="text-4xl font-bold mb-4 text-center text-gray-900">Why Teams Stick with Us</h2>
+            <p className="text-lg mb-12 text-center text-gray-600">Here's what happens when you team up with engineers who've tackled these issues head-on.</p>
 
-            {/* Simplified Stories + Highlights Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-
-              {/* Left: Simplified Stories with Icons */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Left: Stories */}
               <div className="space-y-8">
-                <div className="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-colors duration-300">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-blue-200 transition-colors duration-300">
-                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <div className="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <div className="flex items-center mb-2">
+                    <svg className="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v16h16V4H4z" />
                     </svg>
+                    <h3 className="text-xl font-semibold">Ditch the Daily Grind</h3>
                   </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-slate-900 mb-2">Ditch the Daily Grind</h4>
-                    <p className="text-gray-700 mb-2">That Dallas startup was stuck scoring leads by hand. <strong>We automated it</strong> – now their dev focuses on building, not busywork.</p>
-                    <p className="text-sm text-gray-500 font-medium">3 weeks • 40% time saved</p>
-                  </div>
+                  <p className="text-gray-700">That Dallas startup was bogged down scoring leads manually. We built an AI system to automate it – now their dev focuses on core product, not tedium.</p>
+                  <p className="text-sm text-gray-500 mt-2">3 weeks • 40% time saved</p>
                 </div>
 
-                <div className="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-colors duration-300">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-green-200 transition-colors duration-300">
-                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                <div className="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <div className="flex items-center mb-2">
+                    <svg className="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
+                    <h3 className="text-xl font-semibold">Scale Smart, Not Hard</h3>
                   </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-slate-900 mb-2">Scale Smart, Not Hard</h4>
-                    <p className="text-gray-700 mb-2">DeliveryDash hit 10x growth and nearly crashed. <strong>We added smart routing</strong> – same infrastructure, way more throughput.</p>
-                    <p className="text-sm text-gray-500 font-medium">2 weeks • 10x traffic capacity</p>
-                  </div>
+                  <p className="text-gray-700">DeliveryDash hit 10x growth and nearly crashed. We added smart routing – infrastructure handled it without a sweat.</p>
+                  <p className="text-sm text-gray-500 mt-2">2 weeks • 10x traffic capacity</p>
                 </div>
 
-                <div className="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-colors duration-300">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-purple-200 transition-colors duration-300">
-                    <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                <div className="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <div className="flex items-center mb-2">
+                    <svg className="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
                     </svg>
+                    <h3 className="text-xl font-semibold">Turn Chaos into Cash</h3>
                   </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-slate-900 mb-2">Turn Chaos into Cash</h4>
-                    <p className="text-gray-700 mb-2">Manufacturing mess was bleeding money. <strong>We fixed the bottlenecks</strong> – no fancy transformation, just results.</p>
-                    <p className="text-sm text-gray-500 font-medium">4 weeks • $2.3M savings</p>
-                  </div>
+                  <p className="text-gray-700">Manufacturing mess was hemorrhaging money on inefficient processes. We fixed the bottlenecks – pure results.</p>
+                  <p className="text-sm text-gray-500 mt-2">4 weeks • $2.3M savings</p>
                 </div>
               </div>
 
-              {/* Right: Punchy Highlights as Compact Badges */}
+              {/* Right: Highlights */}
               <div className="space-y-6">
-                <div className="bg-green-100 p-6 rounded-lg flex items-center hover:bg-green-200 transition-colors duration-300">
-                  <span className="text-3xl mr-4">✅</span>
+                <div className="p-4 bg-blue-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 flex items-start">
+                  <svg className="w-5 h-5 mt-1 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
                   <div>
-                    <h4 className="font-bold text-slate-900 text-lg">Battle-Hardened Fixes</h4>
+                    <h4 className="font-bold text-blue-800">Battle-Hardened Fixes</h4>
                     <p className="text-gray-700">150+ projects across SaaS, logistics, fintech – real lessons, not theory.</p>
                   </div>
                 </div>
 
-                <div className="bg-blue-100 p-6 rounded-lg flex items-center hover:bg-blue-200 transition-colors duration-300">
-                  <span className="text-3xl mr-4">🔧</span>
+                <div className="p-4 bg-blue-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 flex items-start">
+                  <svg className="w-5 h-5 mt-1 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                   <div>
-                    <h4 className="font-bold text-slate-900 text-lg">Zero Downtime Integration</h4>
-                    <p className="text-gray-700">We work with your existing stack. No rip-and-replace, no disruption to your flow.</p>
+                    <h4 className="font-bold text-blue-800">Zero Downtime Integration</h4>
+                    <p className="text-gray-700">We work with your existing tools. No rip-and-replace, no disruption.</p>
                   </div>
                 </div>
 
-                <div className="bg-orange-100 p-6 rounded-lg flex items-center hover:bg-orange-200 transition-colors duration-300">
-                  <span className="text-3xl mr-4">⚡</span>
+                <div className="p-4 bg-blue-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 flex items-start">
+                  <svg className="w-5 h-5 mt-1 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                   <div>
-                    <h4 className="font-bold text-slate-900 text-lg">Ship Fast, Ship Right</h4>
-                    <p className="text-gray-700">Quick delivery with clean code, docs, and training. No tech debt left behind.</p>
+                    <h4 className="font-bold text-blue-800">Ship Fast, Ship Right</h4>
+                    <p className="text-gray-700">Quick delivery with clean code, docs, training. No tech debt left behind.</p>
                   </div>
                 </div>
 
-                <div className="bg-purple-100 p-6 rounded-lg flex items-center hover:bg-purple-200 transition-colors duration-300">
-                  <span className="text-3xl mr-4">🎯</span>
+                <div className="p-4 bg-blue-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 flex items-start">
+                  <svg className="w-5 h-5 mt-1 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                  </svg>
                   <div>
-                    <h4 className="font-bold text-slate-900 text-lg">Dev Productivity Focus</h4>
-                    <p className="text-gray-700">We eliminate the grind work so your team builds features that matter.</p>
+                    <h4 className="font-bold text-blue-800">Dev Productivity Focus</h4>
+                    <p className="text-gray-700">We eliminate the grind so your team builds features that matter.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Integrated CTA Banner */}
-            <div className="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-12 px-8 rounded-lg text-center">
-              <h4 className="text-3xl font-bold mb-4">Ready to Fix Yours?</h4>
-              <p className="text-lg mb-6 max-w-2xl mx-auto">
-                No fluff – grab our template or chat about your setup. We'll show you exactly how we slot in.
-              </p>
-              <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a
-                  href="#contact"
-                  className="bg-blue-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors duration-300"
-                >
-                  Start the Convo
-                </a>
-                <a
-                  href="/roadmap-template.pdf"
-                  className="bg-purple-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-colors duration-300"
-                >
-                  Get the Template
-                </a>
+            {/* Solid Navy CTA (no gradient) */}
+            <div className="mt-12 bg-slate-900 text-white py-8 px-6 rounded-lg text-center shadow-lg">
+              <h3 className="text-3xl font-bold mb-4">Ready to Fix Yours?</h3>
+              <p className="mb-6 text-lg">No fluff – grab our template or chat about your setup. We'll show exactly how we slot in.</p>
+              <div className="flex justify-center space-x-4">
+                <a href="#contact" className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">Start the Convo</a>
+                <a href="/roadmap-template.pdf" className="bg-blue-700 px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors duration-300">Get the Template</a>
               </div>
             </div>
           </div>
