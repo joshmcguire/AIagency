@@ -49,70 +49,73 @@ export default function Hero() {
           {/* Hero Content with Better Hierarchy */}
           <div className="text-center max-w-5xl mx-auto">
 
-            {/* Refined Eyebrow */}
+            {/* Authentic Eyebrow */}
             <div className="mb-12">
-              <span className="inline-flex items-center px-4 py-2 rounded-sm bg-white/80 backdrop-blur-sm border border-slate-200/50 text-slate-700 text-sm font-medium tracking-wide">
-                <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full mr-3"></div>
-                Strategic AI Implementation Partners
+              <span className="inline-flex items-center px-4 py-2 rounded-sm bg-white/80 backdrop-blur-sm border border-slate-200/50 text-slate-700 text-sm font-medium">
+                <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                I'm Josh — I've been shipping enterprise AI since before it was cool
               </span>
             </div>
 
-            {/* Main Headline with Strategic Spacing */}
+            {/* Main Headline - More Human */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-slate-900 mb-8 tracking-tight leading-[0.9]">
-              Enterprise AI
-              <span className="block text-6xl md:text-8xl lg:text-9xl font-light bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent">
-                Implementation
+              Enterprise AI sounds exciting
+              <span className="block text-6xl md:text-8xl lg:text-9xl font-light text-blue-700">
+                until you're 6 months in
+              </span>
+              <span className="block text-4xl md:text-6xl lg:text-7xl font-normal text-slate-600">
+                and still have nothing in production
               </span>
             </h1>
 
-            {/* Sophisticated Subheading */}
-            <div className="max-w-3xl mx-auto mb-16">
+            {/* Human Subheading */}
+            <div className="max-w-4xl mx-auto mb-16">
               <p className="text-xl md:text-2xl text-slate-600 font-light leading-relaxed mb-6">
-                We partner with forward-thinking organizations to deploy AI solutions that drive measurable business transformation.
+                We fix that. Most AI consultancies sell months of strategy decks. We sell working software in 3 weeks—because we've done the strategy part 150 times already.
               </p>
               <p className="text-lg text-slate-500 font-light">
-                Proven methodology • Rapid deployment • Guaranteed outcomes
+                No endless workshops • No mystery invoices • Just software that works
               </p>
             </div>
 
-            {/* Enhanced CTA Section */}
+            {/* Enhanced CTA Section - No Gradients */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-24">
               <a
                 href="#contact"
-                className="group bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-10 py-4 rounded-sm text-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 min-w-[240px]"
+                className="group bg-blue-700 text-white px-10 py-4 rounded-sm text-lg font-medium hover:bg-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 min-w-[240px] border border-blue-800"
               >
-                Schedule Strategic Call
+                Book a 30-min call
                 <svg className="inline-block w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
               <a
                 href="#services"
-                className="border border-slate-300 text-slate-700 px-10 py-4 rounded-sm text-lg font-medium hover:border-slate-400 hover:bg-white/80 transition-all duration-300 backdrop-blur-sm min-w-[240px]"
+                className="border border-slate-300 text-slate-700 px-10 py-4 rounded-sm text-lg font-medium hover:border-slate-400 hover:bg-slate-50 hover:shadow-md transition-all duration-300 min-w-[240px]"
               >
-                Explore Methodology
+                See how it works
               </a>
             </div>
           </div>
 
-          {/* Enhanced Stats Grid with Color Accents */}
+          {/* Stats Grid - More Human */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center group">
               <div className="bg-white/60 backdrop-blur-sm border border-slate-200/50 rounded-sm p-8 hover:bg-white/80 transition-all duration-300 hover:shadow-lg">
-                <div className="text-5xl font-extralight text-slate-900 mb-3 group-hover:text-blue-700 transition-colors duration-300">14-21</div>
-                <div className="text-slate-600 font-medium tracking-wide text-sm uppercase">Day Implementation Cycle</div>
+                <div className="text-5xl font-extralight text-slate-900 mb-3 group-hover:text-blue-700 transition-colors duration-300">3 weeks</div>
+                <div className="text-slate-600 font-medium text-sm">Average time to working software</div>
               </div>
             </div>
             <div className="text-center group">
               <div className="bg-white/60 backdrop-blur-sm border border-slate-200/50 rounded-sm p-8 hover:bg-white/80 transition-all duration-300 hover:shadow-lg">
-                <div className="text-5xl font-extralight text-slate-900 mb-3 group-hover:text-indigo-700 transition-colors duration-300">$15K-$20K</div>
-                <div className="text-slate-600 font-medium tracking-wide text-sm uppercase">Fixed Investment Range</div>
+                <div className="text-5xl font-extralight text-slate-900 mb-3 group-hover:text-blue-700 transition-colors duration-300">$17K</div>
+                <div className="text-slate-600 font-medium text-sm">Fixed price (no hourly surprises)</div>
               </div>
             </div>
             <div className="text-center group">
               <div className="bg-white/60 backdrop-blur-sm border border-slate-200/50 rounded-sm p-8 hover:bg-white/80 transition-all duration-300 hover:shadow-lg">
-                <div className="text-5xl font-extralight text-slate-900 mb-3 group-hover:text-blue-700 transition-colors duration-300">100%</div>
-                <div className="text-slate-600 font-medium tracking-wide text-sm uppercase">Deployment Success Rate</div>
+                <div className="text-5xl font-extralight text-slate-900 mb-3 group-hover:text-blue-700 transition-colors duration-300">150+</div>
+                <div className="text-slate-600 font-medium text-sm">Projects that actually shipped</div>
               </div>
             </div>
           </div>

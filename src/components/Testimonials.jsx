@@ -2,51 +2,49 @@ export default function Testimonials() {
   const testimonials = [
     {
       name: "David Chen",
-      role: "Chief Technology Officer",
-      company: "Enterprise Solutions Inc.",
-      quote: "The implementation exceeded our expectations. Their systematic approach delivered a production-ready AI solution that transformed our customer operations with measurable ROI within the first quarter.",
-      result: "85% efficiency improvement",
-      industry: "SaaS Platform"
+      role: "CTO",
+      company: "TechFlow",
+      quote: "Honestly, it blew past what we expected. Josh delivered a production AI system that actually changed how our support team works—measurable ROI in the first quarter, which never happens with consulting projects.",
+      result: "85% efficiency gain",
+      industry: "SaaS"
     },
     {
       name: "Sarah Rodriguez",
-      role: "VP of Operations",
-      company: "Global Manufacturing Corp",
-      quote: "Working with this team eliminated months of internal research and trial-and-error. Their proven framework delivered enterprise-grade automation that scales with our business requirements.",
-      result: "$2.3M annual cost savings",
+      role: "VP Operations",
+      company: "Midwest Manufacturing",
+      quote: "We were drowning in manual processes and had tried two other vendors who gave us nothing but PowerPoints. These guys actually shipped software that works. $2.3M in annual savings, no BS.",
+      result: "$2.3M annual savings",
       industry: "Manufacturing"
     },
     {
       name: "Marcus Thompson",
-      role: "Head of Digital Innovation",
-      company: "Financial Services Group",
-      quote: "The structured methodology and transparent communication throughout the engagement gave us confidence in every milestone. The final solution integrates seamlessly with our existing infrastructure.",
+      role: "Innovation Director",
+      company: "Regional Bank",
+      quote: "Finally, someone who actually understands legacy banking systems. No hand-waving about 'digital transformation'—just AI that integrates with our 15-year-old core banking platform without breaking anything.",
       result: "40% faster processing",
       industry: "Financial Services"
     }
   ];
 
   const stats = [
-    { number: "150+", label: "Enterprise Implementations" },
-    { number: "96%", label: "Project Success Rate" },
+    { number: "150+", label: "Projects shipped" },
     { number: "3.2x", label: "Average ROI" },
-    { number: "14", label: "Day Average Delivery" }
+    { number: "21 days", label: "Average delivery" },
+    { number: "0", label: "Projects that never launched" }
   ];
 
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
-          <span className="inline-block px-4 py-2 rounded-sm bg-slate-100 text-slate-600 text-sm font-medium tracking-wide uppercase mb-8">
-            Client Results
-          </span>
-          <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-8 tracking-tight">
-            Measurable Business Impact
-          </h2>
-          <p className="text-xl text-slate-600 max-w-4xl mx-auto font-light leading-relaxed">
-            Our enterprise clients achieve significant operational improvements and ROI through strategic AI implementation.
-            Performance metrics speak to the effectiveness of our proven methodology.
-          </p>
+        <div className="mb-20">
+          <div className="max-w-3xl">
+            <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-8 tracking-tight">
+              What people actually say
+            </h2>
+            <p className="text-xl text-slate-600 font-light leading-relaxed">
+              I could fill this with generic testimonials about "transformative solutions." Instead, here's what clients tell me when they think nobody's listening.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
@@ -74,7 +72,7 @@ export default function Testimonials() {
                   <div className="text-slate-500 text-sm">{testimonial.company}</div>
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-4 py-3 text-center font-medium text-sm">
+              <div className="bg-blue-700 text-white px-4 py-3 text-center font-medium text-sm border border-blue-600">
                 {testimonial.result}
               </div>
             </div>
@@ -128,19 +126,19 @@ export default function Testimonials() {
             </div>
           </div>
 
-          <div className="bg-white border border-slate-200 p-12">
+          <div className="bg-slate-50 border border-slate-200 p-12">
             <h4 className="text-2xl font-light text-slate-900 mb-6">
-              Ready to Accelerate Your AI Initiative?
+              Tired of pilot projects that never graduate?
             </h4>
             <p className="text-slate-600 mb-8 font-light leading-relaxed max-w-2xl mx-auto">
-              Schedule a strategic consultation to discuss your specific requirements and explore how our implementation methodology
-              can deliver measurable results for your organization.
+              Book a 30-min call. No deck, no pressure. I'll tell you straight if we can help (and if we can't).
+              If it's a fit, we can start next week.
             </p>
             <a
               href="#contact"
-              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-4 rounded-sm text-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="inline-block bg-blue-700 text-white px-8 py-4 rounded-sm text-lg font-medium hover:bg-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl border border-blue-600"
             >
-              Schedule Strategic Consultation
+              Book a call
             </a>
           </div>
         </div>

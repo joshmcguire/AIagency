@@ -29,11 +29,8 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           <div>
-            <span className="inline-block px-4 py-2 rounded-sm bg-white/10 text-white text-sm font-medium tracking-wide uppercase mb-8">
-              Strategic Consultation
-            </span>
             <h2 className="text-4xl md:text-5xl font-light mb-8 tracking-tight leading-tight">
-              Accelerate Your AI Implementation
+              Let's talk about your project
             </h2>
 
             <div className="space-y-8 mb-12">
@@ -202,9 +199,9 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-4 rounded-sm text-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 mt-8"
+                className="w-full bg-blue-700 text-white px-8 py-4 rounded-sm text-lg font-medium hover:bg-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl border border-blue-600 mt-8"
               >
-                Request Strategic Consultation
+                Send message
               </button>
 
               <p className="text-center text-sm text-slate-600 mt-6 font-light">
