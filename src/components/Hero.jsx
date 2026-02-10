@@ -40,28 +40,19 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto w-full">
           <div className="max-w-4xl">
 
-            {/* Inclusive Badge */}
-            <div className="mb-8 opacity-0 animate-fade-in">
-              <span className="inline-flex items-center px-4 py-2 rounded-md bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></div>
-                AI Implementation for Growing Businesses—From Startups Testing Ideas to Teams Scaling Operations
-              </span>
-            </div>
-
-            {/* Main Headline - More Inclusive */}
+            {/* Main Headline - More Human */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-tight opacity-0 animate-fade-in"
                 style={{ animationDelay: '0.2s' }}>
-              150+ Businesses Transformed
+              150+ Businesses Powered Up
               <span className="block text-blue-400">
-                with AI That Actually Ships
+                with Shipping AI
               </span>
             </h1>
 
-            {/* Inclusive Subheading */}
+            {/* Human Subheading */}
             <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed mb-12 max-w-3xl opacity-0 animate-fade-in"
                style={{ animationDelay: '0.4s' }}>
-              Whether you're building your first AI POC or scaling existing systems, we deliver working software in weeks, not months.
-              No endless strategy sessions. Just AI that works.
+              We bring battle-tested engineers who leverage AI for massive gains – think one person handling what used to take a team, and viable MVPs in days.
             </p>
 
             {/* CTA Buttons */}
@@ -71,13 +62,13 @@ export default function Hero() {
                 href="#contact"
                 className="bg-blue-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-center"
               >
-                Schedule a Demo
+                See a Demo
               </a>
               <a
                 href="#testimonials"
                 className="border-2 border-white text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-white hover:text-slate-900 transition-all duration-300 text-center"
               >
-                Watch Case Study
+                Watch Real Stories
               </a>
             </div>
 

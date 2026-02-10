@@ -4,7 +4,7 @@ export default function Testimonials() {
       name: "David Chen",
       role: "Chief Technology Officer",
       company: "TechFlow Solutions",
-      quote: "Strategic AI Partners delivered beyond expectations. Their AI implementation transformed our customer support operations and delivered measurable ROI in the first quarter—a rarity in enterprise consulting.",
+      quote: "These guys turned our support mess into gold – ROI hit in Q1. Honestly didn't expect enterprise consulting to actually deliver this fast.",
       result: "85% efficiency improvement",
       industry: "Enterprise SaaS"
     },
@@ -12,7 +12,7 @@ export default function Testimonials() {
       name: "Alex Kim",
       role: "Chief Executive Officer",
       company: "DeliveryDash",
-      quote: "With limited runway, we needed to prove our MVP could scale. Their AI routing system enabled us to handle 10x traffic growth while maintaining service quality. It saved our company.",
+      quote: "They saved our bacon – scaled traffic 10x without breaking anything. When you're burning cash on runway, this kind of speed matters.",
       result: "10x traffic capacity",
       industry: "Logistics Technology"
     },
@@ -20,7 +20,7 @@ export default function Testimonials() {
       name: "Sarah Rodriguez",
       role: "VP of Operations",
       company: "Midwest Manufacturing Group",
-      quote: "After disappointing experiences with other vendors who delivered only presentations, Strategic AI Partners shipped production software that works. The ROI is undeniable.",
+      quote: "Finally – actual working software instead of pretty presentations. The savings speak louder than any consultant deck ever could.",
       result: "$2.3M annual savings",
       industry: "Manufacturing"
     }
@@ -85,100 +85,122 @@ export default function Testimonials() {
         <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-16">
           <div className="max-w-6xl mx-auto">
             <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-              Why Teams Choose Us
+              Why Teams Stick with Us
             </h3>
             <p className="text-gray-600 text-center mb-16 text-lg max-w-3xl mx-auto">
-              Real stories from teams who moved from idea to production AI in weeks, not months.
+              Here's what happens when you work with engineers who've been in the trenches.
             </p>
 
-            {/* Asymmetric Story Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+            {/* Timeline-Style Stories Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
 
-              {/* Main story - takes up more space */}
-              <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/10 to-purple-400/10 rounded-full -mr-16 -mt-16"></div>
-                <div className="relative">
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mr-4">
-                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="text-2xl font-bold text-slate-900">Rapid Time-to-Value</h4>
-                      <p className="text-blue-600 font-semibold">Dallas startup cuts manual tasks by 40% in 3 weeks</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                    "We had one developer and needed to validate our MVP fast. Josh built an AI system that automated our lead scoring process—what used to take us 5 hours a day now happens automatically. We could focus on actual product development."
+              {/* Story Timeline - Left Side */}
+              <div className="space-y-8">
+                <div className="relative pl-8 border-l-2 border-blue-200">
+                  <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Cut the Busywork in Half</h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Remember that Dallas startup? They were drowning in leads – one dev manually scoring everything.
+                    We built an AI system that handles it instantly. Now they're shipping features instead of grinding through spreadsheets.
                   </p>
-                  <div className="flex items-center text-sm text-gray-500">
-                    <span className="font-semibold">TechFlow, 12-person startup</span>
-                    <span className="mx-2">•</span>
-                    <span>$18K investment, 3-week timeline</span>
+                  <div className="text-sm text-gray-500">
+                    <span className="font-semibold">TechFlow</span> • 3 weeks • 40% time savings
+                  </div>
+                </div>
+
+                <div className="relative pl-8 border-l-2 border-green-200">
+                  <div className="absolute -left-2 top-0 w-4 h-4 bg-green-600 rounded-full"></div>
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Scale Without Breaking</h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    DeliveryDash was about to crash under 10x traffic growth. We didn't rebuild everything – just added smart routing.
+                    Same team, same budget, way more capacity.
+                  </p>
+                  <div className="text-sm text-gray-500">
+                    <span className="font-semibold">DeliveryDash</span> • 2 weeks • 10x traffic handled
+                  </div>
+                </div>
+
+                <div className="relative pl-8 border-l-2 border-purple-200">
+                  <div className="absolute -left-2 top-0 w-4 h-4 bg-purple-600 rounded-full"></div>
+                  <h4 className="text-xl font-bold text-slate-900 mb-3">Turn Chaos into Cash</h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Midwest Manufacturing was hemorrhaging money on inefficient processes.
+                    We didn't pitch them on transformation – we just fixed the bottlenecks. $2.3M saved, same people.
+                  </p>
+                  <div className="text-sm text-gray-500">
+                    <span className="font-semibold">Midwest Manufacturing</span> • 4 weeks • $2.3M savings
                   </div>
                 </div>
               </div>
 
-              {/* Two smaller stories */}
+              {/* Highlights - Right Side */}
               <div className="space-y-6">
-                <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-3">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-slate-900">Proven Results</h4>
-                      <p className="text-green-600 text-sm font-semibold">150+ successful implementations</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    We've solved this problem for manufacturing, SaaS, logistics, and fintech teams. Each project teaches us something new.
+                <div className="bg-green-50 border-l-4 border-green-400 p-6 rounded-r-lg">
+                  <h4 className="font-bold text-slate-900 mb-3 flex items-center">
+                    <svg className="w-6 h-6 text-green-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Battle-Tested Wins
+                  </h4>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    150+ projects across manufacturing, SaaS, logistics, fintech. Every industry teaches us fresh tricks.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mr-3">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-slate-900">Legacy-Friendly</h4>
-                      <p className="text-purple-600 text-sm font-semibold">Works with your existing tools</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    No ripping out your current systems. We build bridges, not replacements.
+                <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
+                  <h4 className="font-bold text-slate-900 mb-3 flex items-center">
+                    <svg className="w-6 h-6 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                    </svg>
+                    No Rip-and-Replace
+                  </h4>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    We work with what you've got. No massive overhauls, no months of downtime. Just smart integrations that fit.
+                  </p>
+                </div>
+
+                <div className="bg-purple-50 border-l-4 border-purple-400 p-6 rounded-r-lg">
+                  <h4 className="font-bold text-slate-900 mb-3 flex items-center">
+                    <svg className="w-6 h-6 text-purple-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+                    </svg>
+                    Speed That Sticks
+                  </h4>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Fast delivery isn't just our thing – it's sustainable. Clean code, good docs, training included. No tech debt left behind.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Call to Action - More Creative */}
-            <div className="bg-slate-900 rounded-2xl p-12 text-center text-white relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-transparent to-purple-600/20"></div>
+            {/* Call to Action - More Conversational */}
+            <div className="bg-gradient-to-br from-blue-900 via-slate-900 to-purple-900 rounded-2xl p-12 text-center text-white relative overflow-hidden">
+              <div className="absolute inset-0 opacity-10">
+                <div className="absolute top-4 left-4 w-8 h-8 border border-white rounded opacity-20"></div>
+                <div className="absolute bottom-8 right-8 w-6 h-6 border border-white rounded opacity-30"></div>
+                <div className="absolute top-16 right-16 w-4 h-4 border border-white rounded opacity-25"></div>
+              </div>
               <div className="relative">
                 <h4 className="text-2xl md:text-3xl font-bold mb-6">
-                  Ready to Explore?
+                  Got Your Wheels Turning?
                 </h4>
                 <p className="text-white/90 mb-8 font-light leading-relaxed max-w-2xl mx-auto text-lg">
-                  Book a 30-min chat—no pitch, just honest advice on your AI goals.
-                  Whether you're building an MVP or scaling existing systems, let's see if it's a fit.
+                  After seeing our approach, ready to map yours? No sales spiel – just straight talk on your AI hurdles.
+                  Grab our roadmap template to start sketching while we chat.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
                     href="#contact"
                     className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
-                    Start a Conversation
+                    Kick Off a Chat
                   </a>
-                  <button className="bg-white/10 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/20 transition-all duration-300 border border-white/20">
-                    Download AI Roadmap Template
-                  </button>
+                  <a
+                    href="/roadmap-template.pdf"
+                    className="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all duration-300 border border-purple-500"
+                  >
+                    Snag the Template
+                  </a>
                 </div>
               </div>
             </div>

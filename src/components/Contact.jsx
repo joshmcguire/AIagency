@@ -2,10 +2,8 @@ import { useState } from 'react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
     email: '',
-    challenge: '',
-    projectStage: ''
+    challenge: ''
   });
 
   const handleSubmit = (e) => {
@@ -28,7 +26,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           <div>
             <h2 className="text-4xl md:text-5xl font-light mb-8 tracking-tight leading-tight">
-              Let's Discuss Your AI Project
+              Let's Talk About Your AI Challenge
             </h2>
 
             <div className="space-y-8 mb-12">
@@ -86,76 +84,27 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="bg-white border border-slate-200 p-10 text-slate-900 rounded-lg">
+          <div className="bg-white border border-slate-200 p-10 text-slate-900 rounded-lg max-w-lg mx-auto">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-light mb-4 tracking-tight">Start with a Quick Chat</h3>
-              <div className="flex items-center justify-center mb-4">
-                <div className="h-2 bg-blue-600 rounded-full flex-1 max-w-16"></div>
-                <span className="mx-3 text-sm font-medium text-slate-600">Step 1 of 2</span>
-                <div className="h-2 bg-gray-200 rounded-full flex-1 max-w-16"></div>
-              </div>
-              <p className="text-gray-600">Share a bit about your challenge, and we'll follow up within 24 hours to see how we can help.</p>
+              <h3 className="text-3xl font-bold mb-4 text-slate-900">Tell Us About Your Project</h3>
+              <p className="text-gray-600">Quick start – no massive form required. Just the basics to get us talking.</p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-3">
-                    Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
-                    placeholder="Your name"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-3">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
-                    placeholder="you@company.com"
-                  />
-                </div>
-              </div>
-
               <div>
-                <label htmlFor="projectStage" className="block text-sm font-medium text-slate-700 mb-3">
-                  Project Stage *
-                </label>
-                <select
-                  id="projectStage"
-                  name="projectStage"
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
                   required
-                  value={formData.projectStage}
+                  value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
-                >
-                  <option value="">Where are you in your AI journey?</option>
-                  <option value="idea">Just exploring ideas</option>
-                  <option value="poc">Ready to build a proof of concept</option>
-                  <option value="scale">Looking to scale existing AI</option>
-                  <option value="replace">Need to replace current solution</option>
-                </select>
+                  placeholder="Your email"
+                />
               </div>
 
               <div>
-                <label htmlFor="challenge" className="block text-sm font-medium text-slate-700 mb-3">
-                  Your Challenge *
-                </label>
                 <textarea
                   id="challenge"
                   name="challenge"
@@ -164,19 +113,26 @@ export default function Contact() {
                   value={formData.challenge}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
-                  placeholder="What's your biggest AI hurdle? (e.g., 'We spend 10 hours a week manually categorizing support tickets')"
+                  placeholder="What are you building? (e.g., 'MVP for lead scoring' or 'Need to automate our support tickets')"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl mt-8"
+                className="w-full bg-blue-600 text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                Get My Free Consultation
+                Get Free Advice
               </button>
 
-              <p className="text-center text-sm text-slate-500 mt-6 font-light">
-                📞 We'll call you within 24 hours • No obligation • Just honest advice
+              <a
+                href="https://calendly.com/strategic-ai-partners"
+                className="block w-full text-center text-blue-600 py-3 text-lg font-medium hover:text-blue-700 transition-colors duration-300"
+              >
+                Skip this, book 30 mins now
+              </a>
+
+              <p className="text-center text-sm text-slate-500 mt-4 font-light">
+                📞 We'll get back within 24 hours • No sales pitch • Just honest insights
               </p>
             </form>
           </div>

@@ -135,21 +135,42 @@ export default function Engineers() {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="bg-slate-900 p-12 text-white text-center">
-          <h3 className="text-2xl md:text-3xl font-light mb-6 tracking-tight">
-            Ready to work with engineers who've been there?
-          </h3>
-          <p className="text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Book a call with Josh. He'll walk you through exactly how we'd approach your specific challenge,
-            and you'll know within 30 minutes if this team can solve your problem.
-          </p>
-          <a
-            href="#contact"
-            className="inline-block bg-blue-700 text-white px-8 py-4 rounded-sm text-lg font-medium hover:bg-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl border border-blue-600"
-          >
-            Book a consultation
-          </a>
+        {/* Personal CTA with Josh */}
+        <div className="bg-gray-100 p-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="text-3xl font-bold mb-6 text-slate-900">
+              Ready to Team Up with Engineers Who Get It?
+            </h3>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
+              <div className="w-32 h-32 bg-gradient-to-br from-slate-700 to-slate-900 rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-white text-3xl font-light">JS</span>
+              </div>
+              <div className="text-center md:text-left max-w-lg">
+                <p className="text-lg text-slate-700 mb-4 leading-relaxed">
+                  Josh here – I've led 50+ of these projects across every industry you can imagine.
+                  Hop on a quick call, and I'll break down exactly how we'd tackle your setup.
+                </p>
+                <p className="text-slate-600">
+                  You'll walk away knowing if we're the right fit, no strings attached.
+                  <span className="font-semibold text-slate-900"> Spots fill up fast</span> – let's chat before your next sprint.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#contact"
+                className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Book Your 30-Min Spot
+              </a>
+              <a
+                href="#contact"
+                className="bg-white text-slate-700 px-8 py-4 rounded-lg text-lg font-semibold border border-slate-300 hover:bg-slate-50 transition-all duration-300"
+              >
+                Skip This, Schedule Now
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
