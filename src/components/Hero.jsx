@@ -28,28 +28,28 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto w-full">
           <div className="max-w-4xl">
 
-            {/* Enterprise Badge */}
+            {/* Inclusive Badge */}
             <div className="mb-8 opacity-0 animate-fade-in">
               <span className="inline-flex items-center px-4 py-2 rounded-md bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium">
                 <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></div>
-                Trusted by 150+ Enterprise Organizations
+                AI Implementation for Growing Businesses—From Startups Testing Ideas to Teams Scaling Operations
               </span>
             </div>
 
-            {/* Main Headline - Ramp-style */}
+            {/* Main Headline - More Inclusive */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-tight opacity-0 animate-fade-in"
                 style={{ animationDelay: '0.2s' }}>
-              150+ Enterprises Transformed
+              150+ Businesses Transformed
               <span className="block text-blue-400">
-                with AI in Weeks
+                with AI That Actually Ships
               </span>
             </h1>
 
-            {/* Enterprise Subheading */}
+            {/* Inclusive Subheading */}
             <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed mb-12 max-w-3xl opacity-0 animate-fade-in"
                style={{ animationDelay: '0.4s' }}>
-              We deploy battle-tested AI that drives measurable transformation—rapidly and reliably.
-              No 6-month strategies. No pilot purgatory. Just production AI that delivers 3x ROI.
+              Whether you're building your first AI POC or scaling existing systems, we deliver working software in weeks, not months.
+              No endless strategy sessions. Just AI that works.
             </p>
 
             {/* CTA Buttons */}
@@ -69,12 +69,12 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* Enterprise Stats */}
+            {/* Business Stats */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 opacity-0 animate-fade-in"
                  style={{ animationDelay: '0.8s' }}>
               <div className="text-center sm:text-left">
                 <div className="text-4xl font-bold text-blue-400 mb-2">150+</div>
-                <div className="text-white/80 text-sm font-medium">Enterprise Implementations</div>
+                <div className="text-white/80 text-sm font-medium">Projects Successfully Shipped</div>
               </div>
               <div className="text-center sm:text-left">
                 <div className="text-4xl font-bold text-blue-400 mb-2">3x</div>
@@ -82,7 +82,7 @@ export default function Hero() {
               </div>
               <div className="text-center sm:text-left">
                 <div className="text-4xl font-bold text-blue-400 mb-2">21 Days</div>
-                <div className="text-white/80 text-sm font-medium">Average Deployment Time</div>
+                <div className="text-white/80 text-sm font-medium">Average Time to Working Software</div>
               </div>
             </div>
           </div>
