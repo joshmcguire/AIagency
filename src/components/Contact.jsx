@@ -25,84 +25,79 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+    <section id="contact" className="py-24 bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Ready to Cut Through the AI Noise?
+            <span className="inline-block px-4 py-2 rounded-sm bg-white/10 text-white text-sm font-medium tracking-wide uppercase mb-8">
+              Strategic Consultation
+            </span>
+            <h2 className="text-4xl md:text-5xl font-light mb-8 tracking-tight leading-tight">
+              Accelerate Your AI Implementation
             </h2>
 
-            <div className="space-y-6 mb-8">
+            <div className="space-y-8 mb-12">
               <div className="flex items-start">
-                <div className="bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
-                  <span className="text-white font-bold">1</span>
+                <div className="w-8 h-8 border border-slate-600 rounded-sm flex items-center justify-center mr-6 mt-1 flex-shrink-0">
+                  <span className="text-white font-light text-sm">01</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Discovery Call (30 mins)</h3>
-                  <p className="text-gray-300">We'll understand your challenges and identify the biggest AI opportunities for your business.</p>
+                  <h3 className="text-xl font-medium mb-3 text-white">Strategic Assessment</h3>
+                  <p className="text-slate-300 font-light leading-relaxed">Comprehensive analysis of your current operations and identification of high-impact AI implementation opportunities.</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
-                  <span className="text-white font-bold">2</span>
+                <div className="w-8 h-8 border border-slate-600 rounded-sm flex items-center justify-center mr-6 mt-1 flex-shrink-0">
+                  <span className="text-white font-light text-sm">02</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Custom Proposal</h3>
-                  <p className="text-gray-300">Get a detailed sprint plan with clear deliverables, timeline, and fixed pricing.</p>
+                  <h3 className="text-xl font-medium mb-3 text-white">Implementation Plan</h3>
+                  <p className="text-slate-300 font-light leading-relaxed">Detailed project scope, technical architecture, timeline, and fixed-price proposal tailored to your requirements.</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
-                  <span className="text-white font-bold">3</span>
+                <div className="w-8 h-8 border border-slate-600 rounded-sm flex items-center justify-center mr-6 mt-1 flex-shrink-0">
+                  <span className="text-white font-light text-sm">03</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Start Your Sprint</h3>
-                  <p className="text-gray-300">Begin your AI transformation with a proven process that delivers real results.</p>
+                  <h3 className="text-xl font-medium mb-3 text-white">Sprint Execution</h3>
+                  <p className="text-slate-300 font-light leading-relaxed">Rapid deployment using proven methodologies with continuous stakeholder communication and milestone delivery.</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-              <h4 className="text-xl font-semibold mb-4">What You'll Get:</h4>
-              <ul className="space-y-2">
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Working AI solution deployed in 2-3 weeks
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Complete training for your team
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  30-day support and optimization
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Roadmap for future AI initiatives
-                </li>
-              </ul>
+            <div className="border border-slate-700 p-8 bg-slate-800/50">
+              <h4 className="text-xl font-medium mb-6 text-white">Engagement Deliverables</h4>
+              <div className="space-y-4">
+                <div className="flex items-start text-slate-300">
+                  <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                  <span className="text-sm font-light">Production-ready AI solution with enterprise integration</span>
+                </div>
+                <div className="flex items-start text-slate-300">
+                  <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                  <span className="text-sm font-light">Comprehensive technical documentation and training materials</span>
+                </div>
+                <div className="flex items-start text-slate-300">
+                  <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                  <span className="text-sm font-light">30-day post-deployment support and performance optimization</span>
+                </div>
+                <div className="flex items-start text-slate-300">
+                  <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                  <span className="text-sm font-light">Strategic roadmap for future AI initiatives and scaling</span>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 text-gray-900">
-            <h3 className="text-2xl font-bold mb-6 text-center">Book Your Discovery Call</h3>
+          <div className="bg-white border border-slate-200 p-10 text-slate-900">
+            <h3 className="text-2xl font-light mb-8 text-center tracking-tight">Schedule Strategic Consultation</h3>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-3">
                     Full Name *
                   </label>
                   <input
@@ -112,14 +107,14 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    placeholder="John Smith"
+                    className="w-full px-4 py-4 border border-slate-300 rounded-sm focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-colors duration-200"
+                    placeholder="Executive Name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address *
+                  <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-3">
+                    Business Email *
                   </label>
                   <input
                     type="email"
@@ -128,15 +123,15 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    placeholder="john@company.com"
+                    className="w-full px-4 py-4 border border-slate-300 rounded-sm focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-colors duration-200"
+                    placeholder="executive@company.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                  Company Name *
+                <label htmlFor="company" className="block text-sm font-medium text-slate-700 mb-3">
+                  Organization *
                 </label>
                 <input
                   type="text"
@@ -145,14 +140,14 @@ export default function Contact() {
                   required
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Your Company Inc."
+                  className="w-full px-4 py-4 border border-slate-300 rounded-sm focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-colors duration-200"
+                  placeholder="Enterprise Corporation"
                 />
               </div>
 
               <div>
-                <label htmlFor="challenge" className="block text-sm font-medium text-gray-700 mb-2">
-                  What's your biggest business challenge? *
+                <label htmlFor="challenge" className="block text-sm font-medium text-slate-700 mb-3">
+                  Strategic Objective *
                 </label>
                 <textarea
                   id="challenge"
@@ -161,78 +156,78 @@ export default function Contact() {
                   rows="4"
                   value={formData.challenge}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Describe the main challenge you'd like AI to help solve..."
+                  className="w-full px-4 py-4 border border-slate-300 rounded-sm focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-colors duration-200"
+                  placeholder="Describe your primary business challenge and desired AI implementation outcomes..."
                 />
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
-                    Budget Range
+                  <label htmlFor="budget" className="block text-sm font-medium text-slate-700 mb-3">
+                    Investment Range
                   </label>
                   <select
                     id="budget"
                     name="budget"
                     value={formData.budget}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-4 border border-slate-300 rounded-sm focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-colors duration-200"
                   >
-                    <option value="">Select budget range</option>
+                    <option value="">Select investment range</option>
                     <option value="15-20k">$15,000 - $20,000</option>
-                    <option value="20-30k">$20,000 - $30,000</option>
-                    <option value="30k+">$30,000+</option>
+                    <option value="20-50k">$20,000 - $50,000</option>
+                    <option value="50k+">$50,000+</option>
                   </select>
                 </div>
 
                 <div>
-                  <label htmlFor="timeline" className="block text-sm font-medium text-gray-700 mb-2">
-                    Desired Timeline
+                  <label htmlFor="timeline" className="block text-sm font-medium text-slate-700 mb-3">
+                    Implementation Timeline
                   </label>
                   <select
                     id="timeline"
                     name="timeline"
                     value={formData.timeline}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-4 border border-slate-300 rounded-sm focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-colors duration-200"
                   >
                     <option value="">Select timeline</option>
-                    <option value="asap">ASAP</option>
-                    <option value="1-month">Within 1 month</option>
-                    <option value="2-3-months">2-3 months</option>
-                    <option value="planning">Just exploring</option>
+                    <option value="immediate">Immediate priority</option>
+                    <option value="1-month">Within 30 days</option>
+                    <option value="2-3-months">Q1/Q2 planning</option>
+                    <option value="strategic">Strategic evaluation</option>
                   </select>
                 </div>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="w-full bg-slate-900 text-white px-8 py-4 rounded-sm text-lg font-medium hover:bg-slate-800 transition-colors duration-300 mt-8"
               >
-                Book My Discovery Call
+                Request Strategic Consultation
               </button>
 
-              <p className="text-center text-sm text-gray-600 mt-4">
-                We'll respond within 24 hours to schedule your free 30-minute discovery call.
+              <p className="text-center text-sm text-slate-600 mt-6 font-light">
+                Our team will contact you within 24 hours to schedule your consultation.
               </p>
             </form>
           </div>
         </div>
       </div>
 
-      <footer className="mt-20 border-t border-white/20 pt-12">
+      <footer className="mt-24 border-t border-slate-700 pt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-8">
-            <h3 className="text-2xl font-bold mb-4">AI Agency</h3>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Cutting through the AI noise to deliver real solutions that transform your business.
-              No hype, no endless consulting - just results in 2-3 weeks.
+          <div className="mb-12">
+            <h3 className="text-2xl font-light mb-6 tracking-tight text-white">Strategic AI Implementation</h3>
+            <p className="text-slate-400 max-w-3xl mx-auto font-light leading-relaxed">
+              Partnering with forward-thinking organizations to deliver measurable business impact through enterprise-grade AI solutions.
+              Proven methodology, transparent execution, guaranteed results.
             </p>
           </div>
 
-          <div className="border-t border-white/20 pt-8">
-            <p className="text-gray-400 text-sm">
-              © 2024 AI Agency. All rights reserved. | Ready to transform your business with AI?
+          <div className="border-t border-slate-700 pt-12">
+            <p className="text-slate-500 text-sm font-light">
+              © 2024 Strategic AI Implementation Partners. All rights reserved.
             </p>
           </div>
         </div>
