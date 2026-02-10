@@ -84,124 +84,114 @@ export default function Testimonials() {
 
         <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-16">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
+            <h3 className="text-4xl font-bold text-slate-900 mb-4 text-center">
               Why Teams Stick with Us
             </h3>
-            <p className="text-gray-600 text-center mb-16 text-lg max-w-3xl mx-auto">
-              Here's what happens when you work with engineers who've been in the trenches.
+            <p className="text-gray-600 text-center mb-12 text-lg max-w-3xl mx-auto">
+              Here's what happens when you team up with engineers who've fixed these headaches before.
             </p>
 
-            {/* Timeline-Style Stories Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            {/* Simplified Stories + Highlights Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
 
-              {/* Story Timeline - Left Side */}
+              {/* Left: Simplified Stories with Icons */}
               <div className="space-y-8">
-                <div className="relative pl-8 border-l-2 border-blue-200">
-                  <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Cut the Busywork in Half</h4>
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    Remember that Dallas startup? They were drowning in leads – one dev manually scoring everything.
-                    We built an AI system that handles it instantly. Now they're shipping features instead of grinding through spreadsheets.
-                  </p>
-                  <div className="text-sm text-gray-500">
-                    <span className="font-semibold">TechFlow</span> • 3 weeks • 40% time savings
+                <div className="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-colors duration-300">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-blue-200 transition-colors duration-300">
+                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-slate-900 mb-2">Ditch the Daily Grind</h4>
+                    <p className="text-gray-700 mb-2">That Dallas startup was stuck scoring leads by hand. <strong>We automated it</strong> – now their dev focuses on building, not busywork.</p>
+                    <p className="text-sm text-gray-500 font-medium">3 weeks • 40% time saved</p>
                   </div>
                 </div>
 
-                <div className="relative pl-8 border-l-2 border-green-200">
-                  <div className="absolute -left-2 top-0 w-4 h-4 bg-green-600 rounded-full"></div>
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Scale Without Breaking</h4>
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    DeliveryDash was about to crash under 10x traffic growth. We didn't rebuild everything – just added smart routing.
-                    Same team, same budget, way more capacity.
-                  </p>
-                  <div className="text-sm text-gray-500">
-                    <span className="font-semibold">DeliveryDash</span> • 2 weeks • 10x traffic handled
+                <div className="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-colors duration-300">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-green-200 transition-colors duration-300">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-slate-900 mb-2">Scale Smart, Not Hard</h4>
+                    <p className="text-gray-700 mb-2">DeliveryDash hit 10x growth and nearly crashed. <strong>We added smart routing</strong> – same infrastructure, way more throughput.</p>
+                    <p className="text-sm text-gray-500 font-medium">2 weeks • 10x traffic capacity</p>
                   </div>
                 </div>
 
-                <div className="relative pl-8 border-l-2 border-purple-200">
-                  <div className="absolute -left-2 top-0 w-4 h-4 bg-purple-600 rounded-full"></div>
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">Turn Chaos into Cash</h4>
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    Midwest Manufacturing was hemorrhaging money on inefficient processes.
-                    We didn't pitch them on transformation – we just fixed the bottlenecks. $2.3M saved, same people.
-                  </p>
-                  <div className="text-sm text-gray-500">
-                    <span className="font-semibold">Midwest Manufacturing</span> • 4 weeks • $2.3M savings
+                <div className="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-colors duration-300">
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-purple-200 transition-colors duration-300">
+                    <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-slate-900 mb-2">Turn Chaos into Cash</h4>
+                    <p className="text-gray-700 mb-2">Manufacturing mess was bleeding money. <strong>We fixed the bottlenecks</strong> – no fancy transformation, just results.</p>
+                    <p className="text-sm text-gray-500 font-medium">4 weeks • $2.3M savings</p>
                   </div>
                 </div>
               </div>
 
-              {/* Highlights - Right Side */}
+              {/* Right: Punchy Highlights as Compact Badges */}
               <div className="space-y-6">
-                <div className="bg-green-50 border-l-4 border-green-400 p-6 rounded-r-lg">
-                  <h4 className="font-bold text-slate-900 mb-3 flex items-center">
-                    <svg className="w-6 h-6 text-green-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Battle-Tested Wins
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    150+ projects across manufacturing, SaaS, logistics, fintech. Every industry teaches us fresh tricks.
-                  </p>
+                <div className="bg-green-100 p-6 rounded-lg flex items-center hover:bg-green-200 transition-colors duration-300">
+                  <span className="text-3xl mr-4">✅</span>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-lg">Battle-Hardened Fixes</h4>
+                    <p className="text-gray-700">150+ projects across SaaS, logistics, fintech – real lessons, not theory.</p>
+                  </div>
                 </div>
 
-                <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
-                  <h4 className="font-bold text-slate-900 mb-3 flex items-center">
-                    <svg className="w-6 h-6 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                    </svg>
-                    No Rip-and-Replace
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    We work with what you've got. No massive overhauls, no months of downtime. Just smart integrations that fit.
-                  </p>
+                <div className="bg-blue-100 p-6 rounded-lg flex items-center hover:bg-blue-200 transition-colors duration-300">
+                  <span className="text-3xl mr-4">🔧</span>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-lg">Zero Downtime Integration</h4>
+                    <p className="text-gray-700">We work with your existing stack. No rip-and-replace, no disruption to your flow.</p>
+                  </div>
                 </div>
 
-                <div className="bg-purple-50 border-l-4 border-purple-400 p-6 rounded-r-lg">
-                  <h4 className="font-bold text-slate-900 mb-3 flex items-center">
-                    <svg className="w-6 h-6 text-purple-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
-                    </svg>
-                    Speed That Sticks
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    Fast delivery isn't just our thing – it's sustainable. Clean code, good docs, training included. No tech debt left behind.
-                  </p>
+                <div className="bg-orange-100 p-6 rounded-lg flex items-center hover:bg-orange-200 transition-colors duration-300">
+                  <span className="text-3xl mr-4">⚡</span>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-lg">Ship Fast, Ship Right</h4>
+                    <p className="text-gray-700">Quick delivery with clean code, docs, and training. No tech debt left behind.</p>
+                  </div>
+                </div>
+
+                <div className="bg-purple-100 p-6 rounded-lg flex items-center hover:bg-purple-200 transition-colors duration-300">
+                  <span className="text-3xl mr-4">🎯</span>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-lg">Dev Productivity Focus</h4>
+                    <p className="text-gray-700">We eliminate the grind work so your team builds features that matter.</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Call to Action - More Conversational */}
-            <div className="bg-gradient-to-br from-blue-900 via-slate-900 to-purple-900 rounded-2xl p-12 text-center text-white relative overflow-hidden">
-              <div className="absolute inset-0 opacity-10">
-                <div className="absolute top-4 left-4 w-8 h-8 border border-white rounded opacity-20"></div>
-                <div className="absolute bottom-8 right-8 w-6 h-6 border border-white rounded opacity-30"></div>
-                <div className="absolute top-16 right-16 w-4 h-4 border border-white rounded opacity-25"></div>
-              </div>
-              <div className="relative">
-                <h4 className="text-2xl md:text-3xl font-bold mb-6">
-                  Got Your Wheels Turning?
-                </h4>
-                <p className="text-white/90 mb-8 font-light leading-relaxed max-w-2xl mx-auto text-lg">
-                  After seeing our approach, ready to map yours? No sales spiel – just straight talk on your AI hurdles.
-                  Grab our roadmap template to start sketching while we chat.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a
-                    href="#contact"
-                    className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-                  >
-                    Kick Off a Chat
-                  </a>
-                  <a
-                    href="/roadmap-template.pdf"
-                    className="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all duration-300 border border-purple-500"
-                  >
-                    Snag the Template
-                  </a>
-                </div>
+            {/* Integrated CTA Banner */}
+            <div className="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-12 px-8 rounded-lg text-center">
+              <h4 className="text-3xl font-bold mb-4">Ready to Fix Yours?</h4>
+              <p className="text-lg mb-6 max-w-2xl mx-auto">
+                No fluff – grab our template or chat about your setup. We'll show you exactly how we slot in.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a
+                  href="#contact"
+                  className="bg-blue-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors duration-300"
+                >
+                  Start the Convo
+                </a>
+                <a
+                  href="/roadmap-template.pdf"
+                  className="bg-purple-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-colors duration-300"
+                >
+                  Get the Template
+                </a>
               </div>
             </div>
           </div>
