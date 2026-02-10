@@ -26,18 +26,67 @@ export default function Engineers() {
   return (
     <section className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mb-20">
-          <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-8 tracking-tight">
-            Our AI Engineers
-          </h2>
-          <p className="text-xl text-slate-600 font-light leading-relaxed mb-8">
-            Here's the thing about our team: they were building the AI systems you use every day before "AI engineering" was even a job title.
-            Google Search, Tesla Autopilot, Spotify recommendations—that's where they cut their teeth.
-          </p>
-          <p className="text-lg text-slate-700 leading-relaxed">
-            Now they're building custom solutions at <span className="font-medium">100x the speed of traditional development</span>.
-            Not because of magic, but because they've seen this pattern solved a thousand different ways and know exactly which approach works for your specific problem.
-          </p>
+        {/* Founder Introduction */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+          <div className="lg:col-span-8">
+            <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-8 tracking-tight">
+              Meet the Team Behind 150+ AI Implementations
+            </h2>
+            <p className="text-xl text-slate-600 font-light leading-relaxed mb-8">
+              Here's the thing about our team: they were building the AI systems you use every day before "AI engineering" was even a job title.
+              Google Search, Tesla Autopilot, Spotify recommendations—that's where they cut their teeth.
+            </p>
+            <p className="text-lg text-slate-700 leading-relaxed mb-8">
+              Now they're building custom solutions at <span className="font-medium">100x the speed of traditional development</span>.
+              Not because of magic, but because they've seen this pattern solved a thousand different ways and know exactly which approach works for your specific problem.
+            </p>
+
+            {/* Quick team stats */}
+            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-slate-200">
+              <div>
+                <div className="text-2xl font-bold text-slate-900">20+</div>
+                <div className="text-sm text-slate-600">Senior Engineers</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-slate-900">Big Tech</div>
+                <div className="text-sm text-slate-600">Background</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-slate-900">150+</div>
+                <div className="text-sm text-slate-600">Projects Shipped</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-4">
+            <div className="bg-white border border-slate-200 rounded-xl p-8 shadow-lg">
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto bg-gradient-to-br from-slate-700 to-slate-900 rounded-xl mb-6 flex items-center justify-center">
+                  <span className="text-white text-3xl font-light">JS</span>
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">Josh McGuire</h3>
+                <p className="text-blue-600 font-medium mb-4">Founder & Lead Engineer</p>
+                <p className="text-sm text-slate-600 leading-relaxed mb-6">
+                  "I've been shipping enterprise AI since 2019—before it was cool.
+                  My team and I have solved this problem 150+ times across every industry you can imagine."
+                </p>
+                <div className="space-y-3 text-xs text-slate-500">
+                  <div className="flex items-center justify-center">
+                    <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57l-.5-.25A13.943 13.943 0 0012 8c-2.36 0-4.62.58-6.5 1.61L5 10a2 2 0 012-2h2V6z" clipRule="evenodd" />
+                    </svg>
+                    Former ML Platform Engineer
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clipRule="evenodd" />
+                    </svg>
+                    Dallas-based, Global Team
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Team Grid */}

@@ -82,67 +82,106 @@ export default function Testimonials() {
           ))}
         </div>
 
-        <div className="bg-slate-50 border border-slate-200 p-16 text-center">
-          <h3 className="text-3xl md:text-4xl font-light text-slate-900 mb-12 tracking-tight">
-            Enterprise Implementation Advantages
-          </h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-slate-900 rounded-sm flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h4 className="font-medium text-slate-900 mb-3">Proven Methodology</h4>
-              <p className="text-slate-600 text-sm font-light leading-relaxed">Battle-tested implementation framework with documented success across enterprise environments.</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-slate-900 rounded-sm flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h4 className="font-medium text-slate-900 mb-3">Rapid Time-to-Value</h4>
-              <p className="text-slate-600 text-sm font-light leading-relaxed">Accelerated deployment minimizing business disruption while maximizing immediate impact.</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-slate-900 rounded-sm flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              <h4 className="font-medium text-slate-900 mb-3">Enterprise Integration</h4>
-              <p className="text-slate-600 text-sm font-light leading-relaxed">Seamless integration with existing enterprise systems and compliance requirements.</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-slate-900 rounded-sm flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h4 className="font-medium text-slate-900 mb-3">Scalable Architecture</h4>
-              <p className="text-slate-600 text-sm font-light leading-relaxed">Solutions designed for growth with performance optimization and future expansion capabilities.</p>
-            </div>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200 p-12">
-            <h4 className="text-2xl font-light text-slate-900 mb-6">
-              Tired of AI projects that never ship?
-            </h4>
-            <p className="text-slate-600 mb-8 font-light leading-relaxed max-w-2xl mx-auto">
-              Book a 30-min call. No deck, no pressure. I'll tell you straight if we can help (and if we can't).
-              Whether you're building an MVP or scaling existing systems, if it's a fit, we can start next week.
+        <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-16">
+          <div className="max-w-6xl mx-auto">
+            <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
+              Why Teams Choose Us
+            </h3>
+            <p className="text-gray-600 text-center mb-16 text-lg max-w-3xl mx-auto">
+              Real stories from teams who moved from idea to production AI in weeks, not months.
             </p>
-            <a
-              href="#contact"
-              className="inline-block bg-blue-700 text-white px-8 py-4 rounded-sm text-lg font-medium hover:bg-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl border border-blue-600"
-            >
-              Book a call
-            </a>
+
+            {/* Asymmetric Story Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+
+              {/* Main story - takes up more space */}
+              <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/10 to-purple-400/10 rounded-full -mr-16 -mt-16"></div>
+                <div className="relative">
+                  <div className="flex items-center mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mr-4">
+                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-bold text-slate-900">Rapid Time-to-Value</h4>
+                      <p className="text-blue-600 font-semibold">Dallas startup cuts manual tasks by 40% in 3 weeks</p>
+                    </div>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                    "We had one developer and needed to validate our MVP fast. Josh built an AI system that automated our lead scoring process—what used to take us 5 hours a day now happens automatically. We could focus on actual product development."
+                  </p>
+                  <div className="flex items-center text-sm text-gray-500">
+                    <span className="font-semibold">TechFlow, 12-person startup</span>
+                    <span className="mx-2">•</span>
+                    <span>$18K investment, 3-week timeline</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Two smaller stories */}
+              <div className="space-y-6">
+                <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-3">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-900">Proven Results</h4>
+                      <p className="text-green-600 text-sm font-semibold">150+ successful implementations</p>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    We've solved this problem for manufacturing, SaaS, logistics, and fintech teams. Each project teaches us something new.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mr-3">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-900">Legacy-Friendly</h4>
+                      <p className="text-purple-600 text-sm font-semibold">Works with your existing tools</p>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    No ripping out your current systems. We build bridges, not replacements.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Call to Action - More Creative */}
+            <div className="bg-slate-900 rounded-2xl p-12 text-center text-white relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-transparent to-purple-600/20"></div>
+              <div className="relative">
+                <h4 className="text-2xl md:text-3xl font-bold mb-6">
+                  Ready to Explore?
+                </h4>
+                <p className="text-white/90 mb-8 font-light leading-relaxed max-w-2xl mx-auto text-lg">
+                  Book a 30-min chat—no pitch, just honest advice on your AI goals.
+                  Whether you're building an MVP or scaling existing systems, let's see if it's a fit.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a
+                    href="#contact"
+                    className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  >
+                    Start a Conversation
+                  </a>
+                  <button className="bg-white/10 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/20 transition-all duration-300 border border-white/20">
+                    Download AI Roadmap Template
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

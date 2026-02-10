@@ -62,48 +62,107 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Methodology Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
-          {methodology.map((step, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group">
-              <div className="p-8">
-                {/* Step number and icon */}
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-slate-900 text-white rounded-lg flex items-center justify-center mr-4 group-hover:bg-blue-600 transition-colors duration-300">
-                    {step.icon}
+        {/* Creative Methodology Layout */}
+        <div className="mb-20">
+          {/* Asymmetric Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+            {/* Assessment - Large Left Card */}
+            <div className="lg:col-span-7 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="flex items-start mb-6">
+                <div className="w-16 h-16 bg-blue-600 text-white rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                  {methodology[0].icon}
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center mb-3">
+                    <span className="text-xs font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full mr-3">01</span>
+                    <span className="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">{methodology[0].timeline}</span>
                   </div>
-                  <span className="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
-                    {step.number}
-                  </span>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3">{methodology[0].title}</h3>
+                  <p className="text-gray-700 leading-relaxed mb-6">{methodology[0].description}</p>
                 </div>
+              </div>
 
-                <h3 className="text-xl font-semibold text-slate-900 mb-4">{step.title}</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">{step.description}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {methodology[0].deliverables.map((item, i) => (
+                  <div key={i} className="flex items-center text-sm text-gray-700 bg-white/60 rounded-lg px-3 py-2">
+                    <svg className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
 
-                {/* Timeline */}
-                <div className="mb-6">
-                  <span className="inline-block text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
-                    {step.timeline}
-                  </span>
+            {/* Build - Vertical Right Cards */}
+            <div className="lg:col-span-5 space-y-6">
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center mr-4">
+                    {methodology[1].icon}
+                  </div>
+                  <div>
+                    <div className="flex items-center mb-1">
+                      <span className="text-xs font-bold text-green-600 bg-green-100 px-2 py-1 rounded-full mr-2">02</span>
+                      <span className="text-sm font-semibold text-green-600">{methodology[1].timeline}</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900">{methodology[1].title}</h3>
+                  </div>
                 </div>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">{methodology[1].description}</p>
+                <div className="space-y-2">
+                  {methodology[1].deliverables.map((item, i) => (
+                    <div key={i} className="text-xs text-gray-600 flex items-center">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-                {/* Deliverables */}
-                <div>
-                  <h4 className="font-semibold text-slate-900 mb-3 text-sm uppercase tracking-wide">Key Deliverables</h4>
-                  <ul className="space-y-2">
-                    {step.deliverables.map((item, i) => (
-                      <li key={i} className="flex items-start text-sm text-gray-600">
-                        <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                        </svg>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-purple-600 text-white rounded-lg flex items-center justify-center mr-4">
+                    {methodology[2].icon}
+                  </div>
+                  <div>
+                    <div className="flex items-center mb-1">
+                      <span className="text-xs font-bold text-purple-600 bg-purple-100 px-2 py-1 rounded-full mr-2">03</span>
+                      <span className="text-sm font-semibold text-purple-600">{methodology[2].timeline}</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900">{methodology[2].title}</h3>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">{methodology[2].description}</p>
+                <div className="space-y-2">
+                  {methodology[2].deliverables.map((item, i) => (
+                    <div key={i} className="text-xs text-gray-600 flex items-center">
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                      {item}
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Process Flow Visualization */}
+          <div className="mt-12 flex justify-center">
+            <div className="flex items-center space-x-4">
+              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
+              <div className="w-16 h-1 bg-gradient-to-r from-blue-600 to-green-600 rounded"></div>
+              <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
+              <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-purple-600 rounded"></div>
+              <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
+              <div className="w-16 h-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded"></div>
+              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Pricing Section - Lighter Design */}

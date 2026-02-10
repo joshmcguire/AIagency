@@ -12,15 +12,27 @@ export default function Hero() {
   return (
     <section className="relative h-screen overflow-hidden bg-cover bg-center bg-no-repeat"
              style={{
-               backgroundImage: `url('https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80')`
+               backgroundImage: `url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
              }}>
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-slate-900/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-900/70 to-slate-800/60"></div>
+
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div
+          className="absolute top-20 left-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
+          style={{ transform: `translateY(${scrollY * 0.3}px)` }}
+        ></div>
+        <div
+          className="absolute bottom-20 right-20 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"
+          style={{ transform: `translateY(${scrollY * -0.2}px)` }}
+        ></div>
+      </div>
 
       {/* Parallax overlay effect */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-slate-900/50 via-transparent to-blue-600/20"
-        style={{ transform: `translateY(${scrollY * 0.2}px)` }}
+        className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent"
+        style={{ transform: `translateY(${scrollY * 0.1}px)` }}
       ></div>
 
       {/* Main Content */}
