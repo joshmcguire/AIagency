@@ -82,30 +82,30 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Integrated Why Teams Section */}
-        <div className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 rounded-3xl p-16 mt-16">
+        {/* Streamlined Why Teams Section */}
+        <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-16 mt-16">
           {/* Subtle background effects */}
-          <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20 rounded-3xl overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-10 rounded-3xl overflow-hidden">
             <div className="absolute top-20 left-1/4 w-1 h-1 bg-blue-400 rounded-full animate-pulse"></div>
-            <div className="absolute top-32 right-1/3 w-1 h-1 bg-cyan-400 rounded-full animate-ping"></div>
-            <div className="absolute bottom-40 left-1/5 w-1 h-1 bg-purple-400 rounded-full" style={{animation: 'twinkle 3s infinite'}}></div>
-            <div className="absolute top-60 right-1/4 w-1 h-1 bg-blue-300 rounded-full animate-pulse"></div>
+            <div className="absolute top-32 right-1/3 w-1 h-1 bg-blue-500 rounded-full animate-ping"></div>
+            <div className="absolute bottom-40 left-1/5 w-1 h-1 bg-blue-300 rounded-full" style={{animation: 'twinkle 3s infinite'}}></div>
+            <div className="absolute top-60 right-1/4 w-1 h-1 bg-blue-400 rounded-full animate-pulse"></div>
           </div>
 
           <div className="max-w-6xl mx-auto relative z-10">
             <h2 className="text-4xl font-bold mb-4 text-center text-white">
               Why Teams Stick with Us
             </h2>
-            <p className="text-lg mb-12 text-center text-blue-100 max-w-3xl mx-auto">
+            <p className="text-lg mb-12 text-center text-slate-300 max-w-3xl mx-auto">
               Here's what happens when you team up with engineers who've tackled these issues head-on.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
               {/* Subtle connection lines */}
-              <svg className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 opacity-20" viewBox="0 0 800 600">
+              <svg className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 opacity-10" viewBox="0 0 800 600">
                 <defs>
                   <filter id="glow">
-                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                    <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
                     <feMerge>
                       <feMergeNode in="coloredBlur"/>
                       <feMergeNode in="SourceGraphic"/>
@@ -122,7 +122,7 @@ export default function Testimonials() {
                 />
                 <path
                   d="M150 250 Q250 200 350 230 T550 270"
-                  stroke="#8B5CF6"
+                  stroke="#60A5FA"
                   strokeWidth="1"
                   fill="none"
                   filter="url(#glow)"
@@ -132,99 +132,99 @@ export default function Testimonials() {
 
               {/* Left: Stories */}
               <div className="space-y-6 relative z-10">
-                <div className="p-6 rounded-xl backdrop-blur-sm border border-blue-500/20 transition-all duration-300 hover:border-blue-400/40 hover:scale-105 group"
+                <div className="p-6 rounded-xl backdrop-blur-sm border border-slate-600/30 transition-all duration-300 hover:border-blue-500/40 hover:scale-105 group"
                      style={{
-                       background: 'rgba(59, 130, 246, 0.1)',
+                       background: 'rgba(30, 41, 59, 0.4)',
                        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
                      }}>
                   <h3 className="text-xl font-bold mb-3 text-white group-hover:text-blue-300 transition-colors">
                     Ditch the Daily Grind
                   </h3>
-                  <p className="text-blue-100 leading-relaxed mb-3">
+                  <p className="text-slate-300 leading-relaxed mb-3">
                     That Dallas startup was bogged down scoring leads manually. We built an AI system to automate it – now their dev focuses on core product, not tedium.
                   </p>
-                  <p className="text-sm text-blue-300 font-medium">3 weeks • 40% time saved</p>
+                  <p className="text-sm text-blue-400 font-medium">3 weeks • 40% time saved</p>
                 </div>
 
-                <div className="p-6 rounded-xl backdrop-blur-sm border border-purple-500/20 transition-all duration-300 hover:border-purple-400/40 hover:scale-105 group"
+                <div className="p-6 rounded-xl backdrop-blur-sm border border-slate-600/30 transition-all duration-300 hover:border-blue-500/40 hover:scale-105 group"
                      style={{
-                       background: 'rgba(139, 92, 246, 0.1)',
+                       background: 'rgba(30, 41, 59, 0.4)',
                        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
                      }}>
-                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-purple-300 transition-colors">
+                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-blue-300 transition-colors">
                     Scale Smart, Not Hard
                   </h3>
-                  <p className="text-purple-100 leading-relaxed mb-3">
+                  <p className="text-slate-300 leading-relaxed mb-3">
                     DeliveryDash hit 10x growth and nearly crashed. We added smart routing – infrastructure handled it without breaking a sweat.
                   </p>
-                  <p className="text-sm text-purple-300 font-medium">2 weeks • 10x traffic capacity</p>
+                  <p className="text-sm text-blue-400 font-medium">2 weeks • 10x traffic capacity</p>
                 </div>
 
-                <div className="p-6 rounded-xl backdrop-blur-sm border border-green-500/20 transition-all duration-300 hover:border-green-400/40 hover:scale-105 group"
+                <div className="p-6 rounded-xl backdrop-blur-sm border border-slate-600/30 transition-all duration-300 hover:border-blue-500/40 hover:scale-105 group"
                      style={{
-                       background: 'rgba(34, 197, 94, 0.1)',
+                       background: 'rgba(30, 41, 59, 0.4)',
                        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
                      }}>
-                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-green-300 transition-colors">
+                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-blue-300 transition-colors">
                     Turn Chaos into Cash
                   </h3>
-                  <p className="text-green-100 leading-relaxed mb-3">
+                  <p className="text-slate-300 leading-relaxed mb-3">
                     Manufacturing mess was hemorrhaging money on inefficient processes. We fixed the bottlenecks – pure results, no theory.
                   </p>
-                  <p className="text-sm text-green-300 font-medium">4 weeks • $2.3M savings</p>
+                  <p className="text-sm text-blue-400 font-medium">4 weeks • $2.3M savings</p>
                 </div>
               </div>
 
               {/* Right: Highlights */}
               <div className="space-y-4 relative z-10">
-                <div className="p-4 rounded-lg backdrop-blur-sm border border-blue-500/20 transition-all duration-300 hover:border-blue-400/40 hover:scale-105 group"
+                <div className="p-4 rounded-lg backdrop-blur-sm border border-slate-600/30 transition-all duration-300 hover:border-blue-500/40 hover:scale-105 group"
                      style={{
-                       background: 'rgba(59, 130, 246, 0.1)',
+                       background: 'rgba(30, 41, 59, 0.3)',
                        boxShadow: '0 4px 16px rgba(0, 0, 0, 0.2)'
                      }}>
                   <h4 className="font-bold text-blue-300 text-lg mb-2 group-hover:text-blue-200 transition-colors">
                     Battle-Hardened Fixes
                   </h4>
-                  <p className="text-blue-100 text-sm">
+                  <p className="text-slate-300 text-sm">
                     We've tackled 150+ projects fixing bottlenecks in SaaS and fintech – real fixes, no theory.
                   </p>
                 </div>
 
-                <div className="p-4 rounded-lg backdrop-blur-sm border border-purple-500/20 transition-all duration-300 hover:border-purple-400/40 hover:scale-105 group"
+                <div className="p-4 rounded-lg backdrop-blur-sm border border-slate-600/30 transition-all duration-300 hover:border-blue-500/40 hover:scale-105 group"
                      style={{
-                       background: 'rgba(139, 92, 246, 0.1)',
+                       background: 'rgba(30, 41, 59, 0.3)',
                        boxShadow: '0 4px 16px rgba(0, 0, 0, 0.2)'
                      }}>
-                  <h4 className="font-bold text-purple-300 text-lg mb-2 group-hover:text-purple-200 transition-colors">
+                  <h4 className="font-bold text-blue-300 text-lg mb-2 group-hover:text-blue-200 transition-colors">
                     Zero Downtime Integration
                   </h4>
-                  <p className="text-purple-100 text-sm">
+                  <p className="text-slate-300 text-sm">
                     We work with your existing tools. No rip-and-replace drama, no system disruption.
                   </p>
                 </div>
 
-                <div className="p-4 rounded-lg backdrop-blur-sm border border-green-500/20 transition-all duration-300 hover:border-green-400/40 hover:scale-105 group"
+                <div className="p-4 rounded-lg backdrop-blur-sm border border-slate-600/30 transition-all duration-300 hover:border-blue-500/40 hover:scale-105 group"
                      style={{
-                       background: 'rgba(34, 197, 94, 0.1)',
+                       background: 'rgba(30, 41, 59, 0.3)',
                        boxShadow: '0 4px 16px rgba(0, 0, 0, 0.2)'
                      }}>
-                  <h4 className="font-bold text-green-300 text-lg mb-2 group-hover:text-green-200 transition-colors">
+                  <h4 className="font-bold text-blue-300 text-lg mb-2 group-hover:text-blue-200 transition-colors">
                     Ship Fast, Ship Right
                   </h4>
-                  <p className="text-green-100 text-sm">
+                  <p className="text-slate-300 text-sm">
                     Quick delivery with clean code, docs, training. Zero technical debt left behind.
                   </p>
                 </div>
 
-                <div className="p-4 rounded-lg backdrop-blur-sm border border-yellow-500/20 transition-all duration-300 hover:border-yellow-400/40 hover:scale-105 group"
+                <div className="p-4 rounded-lg backdrop-blur-sm border border-slate-600/30 transition-all duration-300 hover:border-blue-500/40 hover:scale-105 group"
                      style={{
-                       background: 'rgba(234, 179, 8, 0.1)',
+                       background: 'rgba(30, 41, 59, 0.3)',
                        boxShadow: '0 4px 16px rgba(0, 0, 0, 0.2)'
                      }}>
-                  <h4 className="font-bold text-yellow-300 text-lg mb-2 group-hover:text-yellow-200 transition-colors">
+                  <h4 className="font-bold text-blue-300 text-lg mb-2 group-hover:text-blue-200 transition-colors">
                     Dev Productivity Focus
                   </h4>
-                  <p className="text-yellow-100 text-sm">
+                  <p className="text-slate-300 text-sm">
                     We eliminate the grind so your team builds features that actually matter.
                   </p>
                 </div>
@@ -232,7 +232,7 @@ export default function Testimonials() {
             </div>
 
             {/* Integrated CTA */}
-            <div className="mt-12 p-8 rounded-xl text-center backdrop-blur-sm border border-slate-600/30 transition-all duration-300 hover:border-slate-500/50 hover:scale-105"
+            <div className="mt-12 p-8 rounded-xl text-center backdrop-blur-sm border border-slate-600/30 transition-all duration-300 hover:border-blue-500/40 hover:scale-105"
                  style={{
                    background: 'rgba(15, 23, 42, 0.6)',
                    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)'
@@ -252,7 +252,7 @@ export default function Testimonials() {
                 </a>
                 <a
                   href="/roadmap-template.pdf"
-                  className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105"
+                  className="bg-slate-700 text-white px-6 py-3 rounded-lg hover:bg-slate-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105"
                 >
                   Get the Template
                 </a>
