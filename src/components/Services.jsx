@@ -52,7 +52,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div key={index} className="bg-white border border-slate-200 p-10 hover:shadow-lg transition-all duration-300 group">
               <div className="mb-8">
-                <div className="w-16 h-16 bg-slate-100 rounded-sm flex items-center justify-center mb-6 group-hover:bg-slate-900 transition-colors duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-slate-100 to-slate-200 rounded-sm flex items-center justify-center mb-6 group-hover:bg-gradient-to-br group-hover:from-blue-600 group-hover:to-indigo-700 transition-all duration-300 shadow-sm group-hover:shadow-lg">
                   <div className="group-hover:text-white transition-colors duration-300">
                     {service.icon}
                   </div>
@@ -72,8 +72,12 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="bg-slate-900 p-16 text-white">
-          <div className="max-w-4xl mx-auto text-center">
+        <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-16 text-white relative overflow-hidden">
+          {/* Background accent */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-blue-600/10 to-transparent rounded-full filter blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-indigo-600/10 to-transparent rounded-full filter blur-3xl"></div>
+
+          <div className="relative max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">
               Sprint-Based Implementation
             </h3>
@@ -123,7 +127,7 @@ export default function Services() {
 
             <a
               href="#contact"
-              className="inline-block bg-white text-slate-900 px-8 py-4 rounded-sm text-lg font-medium hover:bg-slate-100 transition-colors duration-300"
+              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-4 rounded-sm text-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Discuss Your Project
             </a>

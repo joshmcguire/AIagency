@@ -74,7 +74,7 @@ export default function Testimonials() {
                   <div className="text-slate-500 text-sm">{testimonial.company}</div>
                 </div>
               </div>
-              <div className="bg-slate-900 text-white px-4 py-3 text-center font-medium text-sm">
+              <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-4 py-3 text-center font-medium text-sm">
                 {testimonial.result}
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function Testimonials() {
             </p>
             <a
               href="#contact"
-              className="inline-block bg-slate-900 text-white px-8 py-4 rounded-sm text-lg font-medium hover:bg-slate-800 transition-colors duration-300"
+              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-4 rounded-sm text-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Schedule Strategic Consultation
             </a>

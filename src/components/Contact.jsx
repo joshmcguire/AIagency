@@ -202,7 +202,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-slate-900 text-white px-8 py-4 rounded-sm text-lg font-medium hover:bg-slate-800 transition-colors duration-300 mt-8"
+                className="w-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-4 rounded-sm text-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 mt-8"
               >
                 Request Strategic Consultation
               </button>
