@@ -2,7 +2,7 @@ name: Deploy Mobile POC to GitHub Pages
 
 on:
   push:
-    branches: [ feature/mobile-poc ]
+    branches: [ main, feature/mobile-poc ]
   workflow_dispatch:
 
 permissions:
